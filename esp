@@ -83,8 +83,6 @@ game:GetService("Players").PlayerAdded:Connect(function(Player)
    Player.CharacterAdded:Connect(function(Character)
        if Outlines == true then
            AddOutline(Character)
-       elseif Outlines == false then
-           game.CoreGui.e:Destroy()
        end
        if NameTags == true then
            AddNameTag(Character)
